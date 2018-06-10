@@ -24,6 +24,19 @@ public class MainActivity extends AppCompatActivity {
 
         for (int index = 0; index < floatNumbersArray.length; index++) {
 
+            floatNumbersArray[index] = 5 + 3 * index;
+
+
+        }
+
+
+        for (int index = 0; index < floatNumbersArray.length; index++) {
+
+            oldTextIndexValue = txtIndex.getText().toString();
+            oldTextValueValue = txtValue.getText().toString();
+
+            txtIndex.setText(oldTextIndexValue + index + "\n");
+            txtValue.setText(oldTextValueValue + floatNumbersArray[index] + "\n");
 
         }
     }
